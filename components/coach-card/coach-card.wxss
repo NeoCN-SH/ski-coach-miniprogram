@@ -1,0 +1,21 @@
+.coach-card { display: flex; padding: 24rpx; margin-bottom: 20rpx; }
+.avatar {
+  width: 112rpx; height: 112rpx; flex: 0 0 112rpx; border-radius: 30rpx;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 36rpx; font-weight: 700;
+  background: linear-gradient(145deg, #69b7ff, #176bff);
+}
+.coach-main { flex: 1; min-width: 0; margin-left: 22rpx; }
+.row, .bottom { display: flex; justify-content: space-between; align-items: center; }
+.name { font-size: 34rpx; font-weight: 700; }
+.verified { display: inline-flex; color: #fff; background: #176bff; border-radius: 50%; font-size: 18rpx; padding: 2rpx 7rpx; }
+.favorite { color: #176bff; font-size: 40rpx; padding: 0 8rpx; }
+.level { color: #5f6d7e; margin-top: 8rpx; font-size: 24rpx; }
+.meta { color: #7d8998; margin-top: 10rpx; font-size: 24rpx; }
+.tags { margin-top: 8rpx; }
+.tag { display: inline-block; padding: 6rpx 12rpx; margin: 6rpx 8rpx 0 0; color: #176bff; background: #edf4ff; border-radius: 999rpx; font-size: 20rpx; }
+.bottom { margin-top: 18rpx; }
+.available { color: #18a36b; font-size: 23rpx; }
+.busy { color: #a0a8b3; font-size: 23rpx; }
+.price { color: #f05d3d; font-size: 34rpx; font-weight: 700; }
+.price text { font-size: 22rpx; font-weight: 400; }

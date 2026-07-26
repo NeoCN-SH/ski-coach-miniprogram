@@ -1,0 +1,18 @@
+<view class="coach-card card" bindtap="openDetail">
+  <view class="avatar">{{coach.initials}}</view>
+  <view class="coach-main">
+    <view class="row">
+      <view class="name">{{coach.name}} <text wx:if="{{coach.verified}}" class="verified">✓</text></view>
+      <view class="favorite" catchtap="toggleFavorite">{{favorite ? '♥' : '♡'}}</view>
+    </view>
+    <view class="level">{{coach.level}} · {{coach.years}}年教龄</view>
+    <view class="meta">★ {{coach.rating}}（{{coach.reviewCount}}） · {{coach.resort}}</view>
+    <view class="tags">
+      <text class="tag" wx:for="{{coach.specialties}}" wx:key="*this">{{item}}</text>
+    </view>
+    <view class="bottom">
+      <view class="{{coach.available ? 'available' : 'busy'}}">{{coach.available ? '近期可约' : '档期较满'}}</view>
+      <view class="price"><text>¥</text>{{coach.price}}<text>/小时</text></view>
+    </view>
+  </view>
+</view>
