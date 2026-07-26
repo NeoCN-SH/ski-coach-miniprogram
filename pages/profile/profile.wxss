@@ -1,0 +1,17 @@
+.user-card { display: flex; align-items: center; padding: 30rpx; }
+.avatar { width: 112rpx; height: 112rpx; display: flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(145deg, #68b7ff, #176bff); border-radius: 34rpx; font-size: 35rpx; font-weight: 700; }
+.user-info { flex: 1; margin-left: 24rpx; }
+.nickname { margin-bottom: 8rpx; font-size: 34rpx; font-weight: 700; }
+.arrow { color: #a2adba; font-size: 42rpx; }
+.coach-entry { display: flex; align-items: center; justify-content: space-between; margin: 24rpx 0; padding: 28rpx 30rpx; color: #fff; border-radius: 28rpx; background: linear-gradient(125deg, #0b3986, #176bff); }
+.entry-title { font-size: 30rpx; font-weight: 700; }
+.entry-desc { margin-top: 8rpx; font-size: 21rpx; opacity: .75; }
+.entry-button { padding: 14rpx 20rpx; background: rgba(255,255,255,.16); border-radius: 999rpx; font-size: 22rpx; }
+.menu { padding: 0 28rpx; }
+.menu-item { height: 104rpx; display: flex; align-items: center; border-bottom: 1rpx solid #edf1f6; }
+.menu-item:last-child { border: 0; }
+.menu-icon { width: 54rpx; font-size: 34rpx; }
+.menu-label { font-weight: 600; }
+.menu-note { margin-left: auto; color: #9aa5b3; font-size: 22rpx; }
+.menu-item .arrow { margin-left: 16rpx; }
+.version { margin-top: 40rpx; color: #a1abb8; text-align: center; font-size: 21rpx; }

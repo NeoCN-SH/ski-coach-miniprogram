@@ -1,0 +1,32 @@
+<view class="page">
+  <view class="user-card card">
+    <view class="avatar">{{user ? user.initials : '⛷'}}</view>
+    <view class="user-info" wx:if="{{user}}">
+      <view class="nickname">{{user.nickName}}</view>
+      <view class="muted">愿每一次转弯都更从容</view>
+    </view>
+    <view class="user-info" wx:else bindtap="login">
+      <view class="nickname">登录 / 注册</view>
+      <view class="muted">同步收藏与预约记录</view>
+    </view>
+    <view class="arrow">›</view>
+  </view>
+
+  <view class="coach-entry" bindtap="applyCoach">
+    <view>
+      <view class="entry-title">我是双板教练</view>
+      <view class="entry-desc">完成资质认证，开启线上获客</view>
+    </view>
+    <view class="entry-button">申请入驻 ›</view>
+  </view>
+
+  <view class="menu card">
+    <view class="menu-item" wx:for="{{menus}}" wx:key="label" data-label="{{item.label}}" bindtap="menuTap">
+      <text class="menu-icon">{{item.icon}}</text>
+      <view class="menu-label">{{item.label}}</view>
+      <view class="menu-note">{{item.note}}</view>
+      <text class="arrow">›</text>
+    </view>
+  </view>
+  <view class="version">雪遇教练 · MVP 1.0.0</view>
+</view>
