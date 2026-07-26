@@ -1,0 +1,6 @@
+.title { margin-top: 8rpx; font-size: 42rpx; font-weight: 800; }
+.subtitle { margin: 8rpx 0 28rpx; }
+.empty { padding-top: 180rpx; text-align: center; }
+.icon { color: #176bff; font-size: 110rpx; }
+.empty-title { margin: 14rpx 0; font-size: 34rpx; font-weight: 700; }
+.empty button { width: 260rpx; margin-top: 40rpx; }
