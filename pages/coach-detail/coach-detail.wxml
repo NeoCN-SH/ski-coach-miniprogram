@@ -1,0 +1,41 @@
+<view class="detail" wx:if="{{coach}}">
+  <view class="profile-hero">
+    <view class="avatar">{{coach.initials}}</view>
+    <view class="name">{{coach.name}} <text>✓ 已认证</text></view>
+    <view class="level">{{coach.level}} · {{coach.years}}年教龄</view>
+    <view class="stats">
+      <view><text class="stat-value">{{coach.rating}}</text><text>综合评分</text></view>
+      <view><text class="stat-value">{{coach.reviewCount}}</text><text>学员评价</text></view>
+      <view><text class="stat-value">{{coach.resort}}</text><text>常驻雪场</text></view>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="card block">
+      <view class="block-title">擅长课程</view>
+      <text class="tag" wx:for="{{coach.specialties}}" wx:key="*this">{{item}}</text>
+    </view>
+    <view class="card block">
+      <view class="block-title">教练介绍</view>
+      <view class="intro">{{coach.intro}}</view>
+    </view>
+    <view class="card block">
+      <view class="block-title">近期可约</view>
+      <view class="days">
+        <view class="day" wx:for="{{coach.schedule}}" wx:key="*this">{{item}}</view>
+      </view>
+    </view>
+    <view class="card block">
+      <view class="block-title">服务说明</view>
+      <view class="service">✓ 资质人工审核　✓ 价格公开透明</view>
+      <view class="service">✓ 上课前确认档期　✓ 平台纠纷协助</view>
+    </view>
+  </view>
+
+  <view class="bottom-bar">
+    <view class="mini-action" bindtap="toggleFavorite"><text>{{favorite ? '♥' : '♡'}}</text>{{favorite ? '已收藏' : '收藏'}}</view>
+    <view class="mini-action" bindtap="contact"><text>✉</text>咨询</view>
+    <view class="price"><text>¥</text>{{coach.price}}<text class="price-unit">/小时</text></view>
+    <button class="book" bindtap="previewBooking">立即预约</button>
+  </view>
+</view>
