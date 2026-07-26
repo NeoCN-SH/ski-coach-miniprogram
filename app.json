@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/coaches/coaches",
+    "pages/coach-detail/coach-detail",
+    "pages/favorites/favorites",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "雪遇教练",
+    "navigationBarBackgroundColor": "#F5F8FC",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F5F8FC",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#7B8794",
+    "selectedColor": "#176BFF",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "首页" },
+      { "pagePath": "pages/coaches/coaches", "text": "找教练" },
+      { "pagePath": "pages/favorites/favorites", "text": "收藏" },
+      { "pagePath": "pages/profile/profile", "text": "我的" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

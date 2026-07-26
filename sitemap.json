@@ -1,0 +1,4 @@
+{
+  "desc": "雪遇教练页面索引",
+  "rules": [{ "action": "allow", "page": "*" }]
+}

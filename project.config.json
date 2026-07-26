@@ -1,0 +1,17 @@
+{
+  "description": "双板滑雪教练信息平台",
+  "packOptions": { "ignore": [] },
+  "setting": {
+    "bundle": false,
+    "userConfirmedBundleSwitch": false,
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  },
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "ski-coach-platform",
+  "miniprogramRoot": "./"
+}

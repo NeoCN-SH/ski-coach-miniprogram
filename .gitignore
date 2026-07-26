@@ -1,0 +1,12 @@
+# WeChat Developer Tools
+project.private.config.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
