@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="search card">
+    <text class="search-icon">⌕</text>
+    <input placeholder="搜索教练、雪场或课程" value="{{keyword}}" bindinput="onInput" />
+  </view>
+
+  <scroll-view scroll-x class="filters">
+    <view class="filter-row">
+      <view wx:for="{{cities}}" wx:key="*this" class="filter {{activeCity === item ? 'active' : ''}}" data-value="{{item}}" bindtap="selectCity">{{item}}</view>
+    </view>
+  </scroll-view>
+  <view class="subfilters">
+    <view class="filter {{activeLevel === item ? 'active' : ''}}" wx:for="{{levels}}" wx:key="*this" data-value="{{item}}" bindtap="selectLevel">{{item}}</view>
+    <view class="available-filter {{onlyAvailable ? 'active' : ''}}" bindtap="toggleAvailable">只看可约</view>
+  </view>
+
+  <view class="result-count">找到 {{list.length}} 位教练</view>
+  <coach-card wx:for="{{list}}" wx:key="id" coach="{{item}}" favorite="{{favoriteMap[item.id]}}" bind:favorite="toggleFavorite" />
+  <view class="empty" wx:if="{{list.length === 0}}">
+    <view class="empty-icon">🏂</view>
+    <view>暂时没有匹配的教练</view>
+    <view class="muted">换个筛选条件试试吧</view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+{
+  "navigationBarTitleText": "找教练",
+  "usingComponents": { "coach-card": "/components/coach-card/coach-card" }
+}
